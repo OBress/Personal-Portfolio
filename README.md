@@ -1,1 +1,1 @@
-My person website at owen.bress.tv
+My personal website at https://owen.bress.tv. Yes the code is awful I am not a front-end developer.
