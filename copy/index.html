@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>Owen's Portfolio</title>
+  </head>
+  <body>
+    
+    <div class="flex-between">
+      <div class="flex-center">
+      <!-- Profile Picture/Name -->
+
+        <img src="/assets/profile.png" alt="Profile Picture" class="profile-picture">
+        <div>
+          <h1 class="ex2-extreme-bold">
+            Owen Bress
+          </h1>
+          <h3 class="sub-name">Software Engineer</h3>
+
+        </div>
+      </div>
+      <!-- Links & phone/email/resume -->
+      <div class="flex-around">
+        <a href="https://github.com/OBress" target="_blank">
+          <img src="./assets/github.svg" alt="Github Link" class="icon">
+        </a>
+        <a href="https://www.linkedin.com/in/owenbress/" target="_blank">
+          <img src="./assets/linkedin.svg" alt="LinkedIn Link" class="icon">
+        </a>
+        <h3 class="clickable" onclick="navigator.clipboard.writeText('owen@bress.tv');">
+          owen@bress.tv
+        </h3>
+        <h3 class="clickable" onclick="navigator.clipboard.writeText('owen@bress.tv');">
+          (267) 808-2116
+        </h3>
+        
+      </div>
+
+    </div>
+
+    <!-- Body -->
+    <div class="fake-body">
+
+      <div class="fake-rest flex-1">
+
+        <div>
+          <h2 class="ex2-normal-bold">About Me</h2>
+          <p class="para">
+            Current student at PSU for a BA in Computer Science and Minor in Mathematics. If I'm not coding, you could find me at the gym, playing soccer, running, or just out and about. I'll also watch and follow the premier league (soccer) and other big tournaments. Other than that I'm mostly just making cool things.
+          </p>
+  
+        </div>
+      
+        <div>
+          <h2 class="ex2-normal-bold">Highlighted Projects</h2>
+          <ul class="s-list">
+              <li>
+                <b>Automated Video Generator</b>: Automatically creates reddit story videos with minecraft parkour backgrounds.
+              </li>
+              <li>
+                <b>Event LM</b>: IOS app that organizes sporting event detailed, sporting recrods, and club information.
+              </li>
+              <li>
+                <b>Isolation Neural Network</b>: Used NEAT algorithim to train neural network for the game of isolation.
+              </li>
+              <li>
+                <b>Personal Website</b>: Uhh... whatever this thing is.
+              </li>
+          </ul>
+  
+        </div>
+        
+        <div>
+          <h2 class="ex2-normal-bold">Planned/Working on Projects</h2>
+          <ul class="s-list">
+            <li>
+              <b>Revamping Event LM</b>: Intend to create a fully fleshed out version of Event LM on the web and propose to high school.
+            </li>
+            <li>
+              <b>Stock Predictor</b>: Using the news for stocks to day trade the stocks when good or bad enough news comes out.
+            </li>
+          </ul>
+  
+        </div>
+      </div>
+
+      <object class="rounded" data="./assets/resume.pdf" type="application/pdf" height="100%"></object>
+
+    </div>
+    
+</body>
+</html>

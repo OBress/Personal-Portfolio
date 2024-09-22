@@ -1,87 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <title>Owen Bress</title>
-  </head>
-  <body>
-    
-    <div class="flex-between">
-      <div class="flex-center">
-      <!-- Profile Picture/Name -->
-
-        <img src="/assets/profile.png" alt="Profile Picture" class="profile-picture">
-        <div>
-          <h1 class="ex2-extreme-bold huge">
-            Owen Bress
-          </h1>
-          <h3 class="sub-name">Software Engineer</h3>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owen Bress - Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="profile-info">
+            <img src="/assets/profile.png" alt="Profile Picture" class="profile-picture">
+            <div>
+                <h1 id="owen-bress" class="ex2-extreme-bold">Owen Bress</h1>
+                <h2 id="software-engineer" class="sub-name">Software Engineer</h2>
+            </div>
         </div>
-      </div>
-      <!-- Links & phone/email/resume -->
-      <div class="flex-around">
-        <a href="https://github.com/OBress" target="_blank">
-          <img src="./assets/github.svg" alt="Github Link" class="icon">
-        </a>
-        <a href="https://www.linkedin.com/in/owenbress/" target="_blank">
-          <img src="./assets/linkedin.svg" alt="LinkedIn Link" class="icon">
-        </a>
-        <h3 class="clickable" onclick="navigator.clipboard.writeText('owen@bress.tv');">
-          owen@bress.tv
-        </h3>
-        <h3 class="clickable" onclick="navigator.clipboard.writeText('owen@bress.tv');">
-          (267) 808-2116
-        </h3>
-        
-      </div>
+        <div class="contact-info">
+            <div class="contact-info">
+              <a href="https://github.com/OBress" target="_blank"><img src="./assets/github.svg" alt="Github Link" class="icon"></a>
+              <a href="https://www.linkedin.com/in/owenbress/" target="_blank"><img src="./assets/linkedin.svg" alt="LinkedIn Link" class="icon"></a>
 
-    </div>
+            </div>
+            <div class="contact-info">
+              <span id="owen@bress.tv" class="clickable" onclick="navigator.clipboard.writeText('owen@bress.tv');">owen@bress.tv</span>
+              <span id="phone" class="clickable" onclick="navigator.clipboard.writeText('(267) 808-2116');">(267) 808-2116</span>
 
-    <!-- Body -->
-    <div class="fake-body">
+            </div>
+        </div>
+    </header>
 
-      <div class="fake-rest flex-1">
-
-        <div>
-          <h2 class="ex2-normal-bold">About Me</h2>
-          <p>I am the one  Don't want you son</p>
+    <main class="main-content">
+        <div class="text-content">
+            <div class="info-container">
+              <section>
+                <h2 class="ex2-normal-bold">About Me</h2>
+                <p>Current student at PSU for a BA in Computer Science and Minor in Mathematics. If I'm not coding, you could find me at the gym, playing soccer, running, or just out and about. I'll also watch and follow the premier league (soccer) and other big tournaments. Other than that I'm mostly just making cool things.</p>
+              </section>
   
-        </div>
-      
-        <div>
-          <h2 class="ex2-normal-bold">Comleted Projects</h2>
-          <ul>
-              <li>Project 1: Brief description</li>
-              <li>Project 2: Brief description</li>
-              <li>Project 3: Brief description</li>
-          </ul>
+              <section>
+                  <h2 class="ex2-normal-bold">Highlighted Projects</h2>
+                  <ul>
+                      <li><strong>Automated Video Generator</strong>: Automatically creates reddit story videos with minecraft parkour backgrounds.</li>
+                      <li><strong>Event LM</strong>: IOS app that organizes sporting event detailed, sporting records, and club information.</li>
+                      <li><strong>Isolation Neural Network</strong>: Used NEAT algorithm to train neural network for the game of isolation.</li>
+                      <li><strong>Personal Website</strong>: Uhh... whatever this thing is.</li>
+                  </ul>
+              </section>
   
-        </div>
-        
-        <div>
-          <h2 class="ex2-normal-bold">Planned Projects</h2>
-          <p>Software Developer at XYZ Company (2020 - Present)</p>
-          <p>Junior Developer at ABC Inc. (2018 - 2020)</p>
-  
-        </div>
-        <div>
-          <h2 class="ex2-normal-bold">Education</h2>
-          <p>Bachelor's Degree in Computer Science, University Name, Year</p>
-  
-        </div>
-      </div>
+              <section>
+                  <h2 class="ex2-normal-bold">Planned/Working on Projects</h2>
+                  <ul>
+                      <li><strong>Revamping Event LM</strong>: Intend to create a fully fleshed out version of Event LM on the web and propose to high school.</li>
+                      <li><strong>Stock Predictor</strong>: Using the news for stocks to day trade the stocks when good or bad enough news comes out.</li>
+                  </ul>
+              </section>
+          </div>
 
-      <object class="rounded" data="./assets/resume.pdf" type="application/pdf" width="650px" height="100%"></object>
+            </div>
 
-    </div>
-    
+        <div class="pdf-container">
+            <iframe src="https://drive.google.com/file/d/14JGleOBR6fuJQ2VFht1zfaZaS2V4zots/preview" class="pdf-viewer"></iframe>
+        </div>
+    </main>
 </body>
 </html>
