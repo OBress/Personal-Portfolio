@@ -1,1 +1,1 @@
-My personal website at https://owen.bress.tv. Yes the code is awful I am not a front-end developer.
+My personal website at https://owen.bress.tv. Yes it is extremely simple I am not a front-end developer :)
